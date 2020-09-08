@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="{% static 'index.css' %}" >
+</head>
+<body>
+<h1>welcome to  next  ecommerce</h1>
+
+{% for product in products %}
+    {{product.name }} <br>
+    {{product.price}} <br>
+    {{product.description}} <br>
+    {{product.expiry_date}} <br>
+    <hr>
+{% endfor %}
+</body>
+</html>
